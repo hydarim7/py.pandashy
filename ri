@@ -1,0 +1,6 @@
+ri.drop
+ri.dropna pak kardane data haee ke naghes hastan
+ri[ri.driver_age < 18 ].driver_gender.value_counts() tafkik kardan
+ri[ri.driver_age < 100 ].driver_race.value_counts(normalize=True) tafkik ba darsasd
+ri.groupby('is_arrested').driver_race.value_counts(normalize=True) khudesh tafkik mikoneeeeeh
+ri.groupby(['violation','driver_gender']).search_conducted.mean() baraye mosbat budan javavab v darsad neshan dadan kafie mean() entekhab shavad
