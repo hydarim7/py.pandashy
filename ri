@@ -1,6 +1,17 @@
 ri.drop
 ri.dropna pak kardane data haee ke naghes hastan
+ri.isnull().sum()
 ri[ri.driver_age < 18 ].driver_gender.value_counts() tafkik kardan
 ri[ri.driver_age < 100 ].driver_race.value_counts(normalize=True) tafkik ba darsasd
 ri.groupby('is_arrested').driver_race.value_counts(normalize=True) khudesh tafkik mikoneeeeeh
 ri.groupby(['violation','driver_gender']).search_conducted.mean() baraye mosbat budan javavab v darsad neshan dadan kafie mean() entekhab shavad
+ri['frisks']=ri.search_type.str.contains('Protective Frisk') moarefi frsiks (edame code khate baadi
+ri.frisks.value_counts()
+inaaaaaaaaaaa ahme bekhatere inlke pandas onaee ka "Nan" ya missing value ro nmikhune
+ri.stop_date.str.slice(0,4) baraye tarikh ha ==mige avval tabdil kon be adad baad az 0 ta 4 adade avaaaaal juda besheee
+do ston ra ba ham yeki kardaaaaaaan dar yek selol=== do ston be yeki
+ri['stoppp_dateee'] =pd.to_datetime(harchi)  vaghti b datetime taarif mishe meshe salo maho ghiere estekhraj she
+ri.stop_datime.dt.year.value_counts() //////////////ri.stop_datime.dt.month.value_counts() /////////////ri.stop_datime.dt.day.value_counts()
+ri.groupby(ri.stop_datime.dt.hour).drugs_related_stop.mean().plot() harchizy k tahesh plot bashe nemodar neshon mide
+vaghti tokhmi neshon mide nemodar ro bayad nahve sort ro avaz kony ri.stop_datime.dt.hour.value_counts().sort_index().plot()/// sort_index (avaz mishe)/// (normal injurie)
+mahsooor kardan data khas bein chand saat ri[(ri.stop_datime.dt.day > 4) & (ri.stop_datime.dt.day < 22)].shape
