@@ -1,0 +1,8 @@
+path="C:/Users/rose/Desktop/anfs1.csv"
+ri.to_csv(path)
+baraye sae kardna dade dar file csv jadid (neizy b ijade file jadid nmibASHAD)
+ri.describe() (tozihati shamel miangin / enherafe meeyaar va ....)
+ri.describe(include="all") (hamchenin ghire adad ha ro neshon mide
+ri.info()
+week 2
+ri["year"]=ri["year"]*2 avaz kardane kolle sootoonnn year ba ye meghdare moshkhass
