@@ -1,0 +1,13 @@
+nemodar jaabe kebrity baraye didane dade ha ba ham
+import seaborn as sns
+sns.boxplot(x="highway-mpg", y="engine-size", data=ri)
+box plot(mohem ast k maghadir x va y hade aghal bayad yeki int bashe .. age dotash object bashe kar akhahad kard_
+ 
+ nemodare ghiase ertebate beyen hadaf va moteghaaaeer
+ hadaf dar y abayad beshine
+import matplotlib.pyplot as plt
+x=ri['fuel-system']
+y =ri['price']
+plt.scatter(x,y)
+regression dade ha
+anavee nemodar ha
